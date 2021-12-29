@@ -1,0 +1,135 @@
+/*
+Selectors
+=========
+
+Element Selectors
+-----------------
+h1 {
+}
+
+class Selector 
+--------------
+.class-name {
+}
+
+id Selctor 
+----------
+#id-name {
+}
+
+Selector Combinations
+=====================
+
+<h1 class="larger-header"> 
+    Title
+</h1>
+
+if you wanted to select all h1 elements within class name larger-header
+h1.larger-header {
+    font-size: 200%;
+}
+
+<h2 id="big-blue" class="large blue"> 
+    Title
+</h2>
+
+if you wanted to select an element with the id big blue and class large blue and  both the class large and blue 
+then you would use this selctor
+#big-blue.large.blue
+
+
+.ancestor .child {
+    property: value;
+}
+
+<div>
+    <p>Selected</p>
+    <p>Selected</p>
+    <span>
+        </p>Selected</p>
+    </span>
+</div>
+
+div p {
+    color: red;
+}
+
+<header class="main-header">
+    <h1 class="brown">
+        Selected
+    </h1>
+</header>
+
+header.main-header h1.brown {
+    color: brown;
+}
+
+<p class="big">Content1</p>
+<p class="large">Content2</p>
+
+if you wanted to change the same font size for above both.
+.big, .large {
+    font-size: 200%;
+
+Everything Selector
+-------------------
+* {
+}
+
+How to load CSS
+===============
+
+* Inline
+* External
+
+* Inline
+--------
+
+1.
+==
+<h1> style="color: blue;">
+    Blue Title
+</h1>
+
+
+2.
+==
+<head>
+    <style>
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+
+External CSS
+=============
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+*/
+
+.blue {
+    color: rgba(255, 255, 0, .5);
+    color: #00000000;
+    color: hsla(0, 100%, 53%, 0);
+}
+
+h1 {
+    color: green;
+}
+
+body {
+    color: red;
+    font-size: 40px;
+}
+
+.box {
+    height: 100px;
+    width: 2rem; /* em and rem are depends on the font */
+    padding: 20px;
+    margin: 50px;
+    border: 10px solid black;
+    background-color: red;
+}
